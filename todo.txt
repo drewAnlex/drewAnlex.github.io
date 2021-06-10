@@ -1,0 +1,15 @@
+# 27-05-2021
+- Terminar el markup de la web
+- Decidir la paleta de colores
+- Crear los componentes en CSS
+- Crear la DB para el blog
+- Decidir que CMS usar 
+- Escribir el primer blogPost
+- Hacer un CV
+- Decidir que proyectos haré para colgar
+
+
+
+----------- credits ----------
+
+<a href="https://storyset.com/web">Illustration by Freepik Storyset</a> <- SVG Computer Man Animated
