@@ -93,9 +93,9 @@ nav {
 
 /* Estructura*/
 .wrapper {
-  min-height: 92vh;
   display: flex;
   flex-direction: column;
+  margin: 2em 2em;
 }
 .wrapper .box {
   justify-content: center;
@@ -119,7 +119,7 @@ nav {
 
 /*Project Cards*/
 .cards {
-  display: grid;
+  display: block;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   margin: 4rem 5vw;
@@ -130,10 +130,11 @@ nav {
 .card__project {
   position: relative;
   display: block;
-  height: 100%;
+  height: 50vh;
   border-radius: calc(var(--curve) * 1px);
   overflow: hidden;
   text-decoration: none;
+  margin-bottom: 2em;
 }
 
 .card__image {
@@ -214,10 +215,11 @@ nav {
 }
 
 .card__description {
-  padding: 0 2em 2em;
+  padding: 0 2em 4em;
   margin: 0;
   color: #d7bdca;
-  font-family: "MockFlowFont";
+  font-family: "Poppins", sans-serif;
+    font-size: 0.8em;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
@@ -250,6 +252,29 @@ nav {
   flex-wrap: wrap;
   list-style: none;
   justify-content: space-between;
+  width: 100%;
+}
+
+.skill-list li {
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #1a1a2e;
+  border: 1px solid;
+  align-items: center;
+  text-align: center;
+  height: 65%;
+}
+
+.skill-list .li-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-list .li-container p {
+  margin: 0;
+  margin-left: 5px;
 }
 
 .btn {
@@ -306,6 +331,36 @@ nav {
   }
   .navbar-left {
     display: inline-block;
+  }
+  .wrapper {
+    margin: 2em 8vw;
+  }
+
+  .card {
+    padding: 5vh 1vw;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 4rem 5vw;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .card__project {
+    position: relative;
+    display: block;
+    height: 70vh;
+    border-radius: calc(var(--curve) * 1px);
+    overflow: hidden;
+    text-decoration: none;
+  }
+  
+  .card__image {
+    width: 100%;
+    height: auto;
   }
 }
 
